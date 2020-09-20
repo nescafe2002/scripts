@@ -7,6 +7,7 @@
 # Changelog:
 # Ver: 0.1.1 Python3 support by Antonin Skala skala.antonin@gmail.com 3.2019
 # Ver: 0.1.2 Support Python 2 and 3 by Antonin Skala skala.antonin@gmail.com 3.2019
+# Ver: 0.1.3 Set away after last relay client disconnects by Joris Talma joris@talma.nl
 
 try:
     import weechat
