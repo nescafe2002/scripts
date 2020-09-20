@@ -24,7 +24,7 @@ else:
 
 SCRIPT_NAME = 'detach_away'
 SCRIPT_AUTHOR = 'p3lim'
-SCRIPT_VERSION = '0.1.2'
+SCRIPT_VERSION = '0.1.3'
 SCRIPT_LICENSE = 'MIT'
 SCRIPT_DESC = 'Automatically sets away message based on number of relays connected'
 
@@ -66,7 +66,7 @@ def relay_disconnected(data, signal, signal_data):
     if DEBUG():
         weechat.prnt('', 'DETACH_AWAY: last #relays: ' + str(num_relays))
 
-    if int(num_relays) > 0:
+    if int(num_relays) == 1:
         set_away(True)
 
     num_relays = weechat.info_get('relay_client_count', 'connected')
